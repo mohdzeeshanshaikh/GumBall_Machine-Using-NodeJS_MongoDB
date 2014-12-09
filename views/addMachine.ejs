@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>GumBall Machine</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+  <link rel="stylesheet" type="text/css" href="../stylesheets/style.css" />
+  
+ 
+</head>
+
+<body>
+  <div id="main">
+    <div id="logo">
+        <h1>Gum Ball Machine</h1>
+        <div class="slogan">Grails/Groovy Project</div>
+    </div>
+    <div align = "center">
+       		<img src="images/gumMachine.png" alt="gumMachine" width= "280" height= "280"/>
+        </div>
+    
+    <div id="site_content">
+    	<div align = "center">
+    		<form method="POST" action="/saveNewMachine">
+    		<table bgcolor = "#ffffff">
+    		
+    			<tr>	
+            		<td><label>Serial Number</label>
+            		<td><input type="text" value="" required="required" placeholder="Enter serial number" name="serialNo" id="serialNo">
+            	</tr>
+    			<tr>
+            		<td><label>Model Number</label></td>
+            		<td><input type="text" value="" required="required" placeholder="Enter model number" name="modelNo" id="modelNo"></td>
+           		</tr>
+            	
+            	<tr>	
+            		<td><label>Count</label>
+            		<td><input type="text" value="" required="required" placeholder="Count" name="count" id="count">
+            	</tr>
+            	<tr>
+            		<td><input type="submit" name="submit" id="submit" value="Add" /></td>
+            		<td></td>
+            	</tr>
+               </table>
+         	</form>
+    	</div>
+    </div>
+    <div id="footer">
+      <p>Copyright &copy; Prashant Luthra</p>
+    </div>
+  </div>
+</body>
+</html>
