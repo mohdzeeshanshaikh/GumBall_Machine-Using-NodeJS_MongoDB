@@ -25,10 +25,10 @@ db = new Db('zee_cmpe281', server);
 db.open(function(err, db) {
   db.authenticate("zee","zee123",function(err,success){
 		if(!err) {
-	        console.log("Connected to 'gumballdb' database");
-	        db.collection('gumball', {strict:true}, function(err, collection) {
+	        console.log("Connected to 'zee_cmpe281' database");
+	        db.collection('NodeGumballMachine', {strict:true}, function(err, collection) {
 	            if (err) {
-	                console.log("The 'gumballs' collection doesn't exist.");
+	                console.log("The 'NodeGumballMachine' collection doesn't exist.");
 	            }
 	        });
 	    }
@@ -38,7 +38,7 @@ db.open(function(err, db) {
 
 exports.addMachine = function(req, res){
 	var machine = req.body;
-	db.collection('gumball', function(err, data){
+	db.collection('NodeGumballMachine', function(err, data){
 		data.insert(machine, {safe: true}, function(err, result){
 			if (err) {
 	            res.send({'error':'Error occurred'});
