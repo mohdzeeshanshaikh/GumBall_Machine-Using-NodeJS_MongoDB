@@ -8,10 +8,10 @@
   },
   "dependencies": {
     "express": "*",
-    "ejs": "*"
+    "ejs": "*",
     "fs" : "*",
     "node-rest-client" : "*",
-    "crypto" : "*"
+    "crypto" : "*",
     "async": "*",
     "http": "*",
     "path": "*",
