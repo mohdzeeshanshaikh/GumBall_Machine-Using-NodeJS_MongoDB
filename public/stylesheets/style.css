@@ -101,7 +101,6 @@ ol li
 
 #logo
 { width: 950px;
-  float: left;
   height: 80px;
   background: transparent;
   padding: 0 0 0px 10px;}
@@ -110,7 +109,8 @@ ol li
 { font: normal 350% 'Yanone Kaffeesatz', arial, sans-serif;
   padding: 5px 0 0 17px;
   color: #555;
-  float: left;}
+  
+}
 
 #logo h1 a
 { color: #35BDF5;
@@ -168,7 +168,7 @@ ul#menu li a:hover
 { color: #F14E23;}
 
 #site_content
-{ width: 950px;
+{ width: 350px;
   overflow: hidden;
   margin: 0 auto 0 auto;
   padding: 0;
@@ -183,7 +183,7 @@ ul#menu li a:hover
  border: 1px solid #E7E7E7;
  margin: 0;
  padding: 0;
- background: #00ffff 0 0 no-repeat; 
+ background: #AD855C 0 0 no-repeat; 
 }
 
 #sidebar_container
