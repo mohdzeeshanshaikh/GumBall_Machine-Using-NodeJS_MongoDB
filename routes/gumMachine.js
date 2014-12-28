@@ -16,11 +16,11 @@ var Server = mongo.Server,
 Db = mongo.Db,
 BSON = mongo.BSONPure;
 
-var server = new Server('ds039950.mongolab.com',39950,{auto_reconnect: true});
-var db = new Db('zee_cmpe281', server);
+var server = new Server('xxxxxxxxx.mongolab.com',00000,{auto_reconnect: true});
+var db = new Db('xxxxxxx', server);
 
 db.open(function(err, db) {
-  db.authenticate("zee","zee123",function(err,success){
+  db.authenticate("xxx","xxxxxx",function(err,success){
 		if(!err) {
 	        console.log("Connected to 'zee_cmpe281' database");
 	        db.collection('NodeGumballMachine', {strict:true}, function(err, collection) {
